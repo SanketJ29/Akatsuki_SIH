@@ -13,11 +13,11 @@ const Team = () => {
     <div class="flex flex-wrap -m-4">
       <div class="p-4 lg:w-1/4 md:w-1/2">
         <div class="h-full flex flex-col items-center text-center">
-          <img alt="team" class="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4" src=""/>
+          <img alt="team" class="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4" src="https://www.linkpicture.com/q/push_linkpic.jpeg"/>
           <div class="w-full">
             <h2 class="title-font font-medium text-xl text-green-400 mb-3">Pushkaraj Baradkar</h2>
-            <h3 class="text-xl text-gray-500 mb-3">Leader</h3>
-            <p class="mb-4">Skills: </p>
+            <h3 class="text-xl mb-2">Leader</h3>
+            <p class="mb-4">Skills: React.js, Node.js, ML, Tailwind CSS</p>
             
           </div>
         </div>
@@ -34,41 +34,41 @@ const Team = () => {
       </div>
       <div class="p-4 lg:w-1/4 md:w-1/2">
       <div class="h-full flex flex-col items-center text-center">
-          <img alt="team" class="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4" src=""/>
+          <img alt="team" class="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4" src="https://www.linkpicture.com/q/omkar_linkpic_1.jpeg"/>
           <div class="w-full">
             <h2 class="title-font font-medium text-xl text-green-400 mb-2">Omkar Mahajan</h2>
             <h3 class="text-lg mb-2">ML Developer</h3>
-            <p class="mb-2">Skills:</p>
+            <p class="mb-2">Skills: ML, Deep learning, Node.js</p>
           </div>
         </div>
       </div>
       <div class="p-4 lg:w-1/4 md:w-1/2">
         <div class="h-full flex flex-col items-center text-center">
-        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4" src=""/>
+        <img alt="team" class="flex-shrink-0 rounded-lg w-full h-80 object-cover object-center mb-4" src="https://www.linkpicture.com/q/vedansh_linkpic.jpeg"/>
           <div class="w-full">
             <h2 class="title-font font-medium text-xl text-green-400 mb-2">Vedansh Udhawani</h2>
             <h3 class="text-lg mb-2">ML Developer</h3>
-            <p class="mb-2">Skills:</p>
+            <p class="mb-2">Skills: ML, Deep learning, Node.js</p>
           </div>
         </div>
       </div>
       <div class="p-4 lg:w-1/2 md:w-full text-center">
         <div class="h-full flex flex-col items-center text-center">
-        <img alt="team" class="flex-shrink-0 rounded-lg w-1/2 h-80 object-cover object-center mb-4" src=""/>
+        <img alt="team" class="flex-shrink-0 rounded-lg w-1/2 h-80 object-cover object-center mb-4" src="https://www.linkpicture.com/q/sanj_linkpic.jpeg"/>
           <div class="w-full">
             <h2 class="title-font font-medium text-xl text-green-400 mb-2">Sanjana Asrani</h2>
             <h3 class="text-lg mb-2">ML Developer</h3>
-            <p class="mb-2">Skills:</p>
+            <p class="mb-2">Skills: ML, Deep learning, Node.js</p>
           </div>
         </div>
       </div>
       <div class="p-4 lg:w-1/2 md:w-full text-center">
         <div class="h-full flex flex-col items-center text-center">
-        <img alt="team" class="flex-shrink-0 rounded-lg w-1/2 h-80 object-cover object-center mb-4" src=""/>
+        <img alt="team" class="flex-shrink-0 rounded-lg w-1/2 h-80 object-cover object-center mb-4" src="https://www.linkpicture.com/q/yash_linkpic.jpeg"/>
           <div class="w-full">
             <h2 class="title-font font-medium text-xl text-green-400 mb-2">Yash Sahane</h2>
             <h3 class="text-lg mb-2">Frontend Developer</h3>
-            <p class="mb-2">Skills:</p>
+            <p class="mb-2">Skills: React.js, Node.js, ML</p>
           </div>
         </div>
       </div>
