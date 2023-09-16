@@ -4,7 +4,7 @@ const Explore = () => {
     return (
       <div>
         <Navbar />
-        <section class="text-gray-400 bg-gray-900 body-font">
+        <section class="text-gray-400 bg-gray-900 body-font min-h-screen">
         <div class="container px-5 py-8 mx-auto">
           <div class="flex flex-col text-center w-full mb-20">
             <h1 class="text-4xl font-medium title-font mb-6 text-green-400">DISCOVER TREE SPECIES</h1>
