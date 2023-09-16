@@ -4,15 +4,38 @@ import Navbar from "../components/Navbar";
 import CodeBlockWithCopyButton from "../components/CodeBlockWithCopyButton";
 
 const APIPage = () => {
-  const exampleCode = `response = openai.ChatCompletion.create(
-    model="gpt-3.5-turbo",
-    messages=[
-        {"role": "system", "content": "You are a helpful assistant."},
-        {"role": "user", "content": "Who won the world series in 2020?"},
-        {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},
-        {"role": "user", "content": "Where was it played?"}
-    ]
-)`;
+  const javaScriptCode = `
+  app.post('/process_image', upload.single('file'), async (req, res) => {
+    try {
+      const imageBuffer = req.file.buffer;
+  
+      const model = await ObjectDetection.load();
+
+      const inputTensor = tf.node.decodeImage(imageBuffer);
+      const predictions = await model.detect(inputTensor);
+  
+      const jsonResults = JSON.stringify(predictions);
+  
+      res.send(jsonResults);
+    } catch (error) {
+      res.status(500).send({ error: 'An error occurred' });
+    }
+  });
+  `;
+  const pythonCode = `image_file = request.files["file"]
+print(type(image_file))
+image_bytes = image_file.read()
+model = yolov5.load("best.pt")
+img = Image.open(io.BytesIO(image_bytes))
+results = model(img, size=640)  # reduce size=320 for faster inference
+results.show()
+return results.pandas().xyxy[0].to_json(orient="records")`;
+
+  const sampleResponse = `[
+    { "xmin": 274.3086853027, "ymin": 449.2939453125, "xmax": 323.8813171387, "ymax": 506.7611694336, "confidence": 0.8015038371, "class": 0, "name": "bh" }, 
+    { "xmin": 37.3960533142, "ymin": 99.2782821655, "xmax": 129.5557098389, "ymax": 199.8358306885, "confidence": 0.7850781083, "class": 0, "name": "bh" }, 
+    { "xmin": 656.1591186523, "ymin": 463.1016235352, "xmax": 710.3174438477, "ymax": 546.3992919922, "confidence": 0.7801984549, "class": 0, "name": "bh" }
+  ]`;
   return (
     <div>
       <Navbar />
@@ -30,23 +53,23 @@ const APIPage = () => {
             </button>
             <div className="float-left ">
               <h2 class="text-2xl text-green-400 font-medium title-font mb-9 mt-9 text-left">
-                Sample Code
+                JavaScript
               </h2>
-              <CodeBlockWithCopyButton code={exampleCode} />
+              <CodeBlockWithCopyButton code={javaScriptCode} />
             </div>
 
             <div>
               <h2 class="text-2xl text-green-400 font-medium title-font mb-9 mt-9 text-left">
-                Endpoint Code
+                Python
               </h2>
-              <CodeBlockWithCopyButton code={exampleCode} />
+              <CodeBlockWithCopyButton code={pythonCode} />
             </div>
 
             <div>
               <h2 class="text-2xl text-green-400 font-medium title-font mb-9 mt-9 text-left">
-                Response Code
+                Sample Response
               </h2>
-              <CodeBlockWithCopyButton code={exampleCode} />
+              <CodeBlockWithCopyButton code={sampleResponse} />
             </div>
           </div>
           {/* <div class="flex flex-wrap -m-4">
