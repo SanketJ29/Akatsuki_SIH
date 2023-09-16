@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Team from "./pages/Team";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import APIPage from "./pages/APIPage";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -37,6 +38,10 @@ const App = () => {
     {
       path: "/register",
       element: <Register />,
+    },
+    {
+      path: "/apipage",
+      element: <APIPage />,
     },
   ]);
   return (
